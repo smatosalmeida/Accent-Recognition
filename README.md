@@ -41,7 +41,7 @@ Because the ceded data was unbalanced (no portuguese female speaker), I added 15
 ### Data Dictionary
 
 |Feature|Type|Dataset|Description|
-|---|---|---|---|---|
+|---|---|---|---|
 |sentence_n|integer|df|sentence id|
 |sentence|object|df|sentence read by speaker|
 |country|object|df|country of speaker|
@@ -58,12 +58,19 @@ Below is a summary of steps to create a model that categorizes a binary class vo
 Clean noise from the audio - FourierTransformation Preliminary EDA on xlsx data Random sample separated Choose transformers and models to use in a neural networks Check the scores of the models Explore the features, create a Confusion Matrix, calculate error metrics.
 
 ### Neural Networks:
+
 num_labels = 2 
+
 filter_size = 2 
+
 loss=binary_crossentropy 
+
 metrics=binary_accuracy 
+
 optimizer=adam 
+
 batch_size=32 
+
 epochs=5
 
 ### Model Scores
